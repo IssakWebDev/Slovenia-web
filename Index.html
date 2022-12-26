@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<style>
+     
+    .video-title {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 2px;
+    }
+
+    .video-stats {
+        font-family: arial;
+        font-size: 14px;
+        color: rgb(96,96,96);
+        margin-top: 2px;
+        margin-bottom: 120px;
+    }
+
+    .brain-pod {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 2px;
+        width: 550px;
+    }
+
+    .history-pod {
+         color: rgb(96,96,96);
+         margin-top: 2px;
+         width: 1000px;
+    }
+
+    .bled-weight {
+         font-size: 20px;
+         font-weight: bold;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         color: rgb(14, 14, 14);
+    }
+
+    .slovenia-img {
+        border-radius: 15px;
+        margin-bottom: 2px;
+    }
+
+
+    .image-church {
+        color: rgb(96,96,96);
+        font-family: arial;
+        font-weight: 300;
+        margin-top: 2px;
+    }
+
+    .site-photo {
+        text-decoration: none;
+    }
+
+    .site-photo:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    button {
+        background-color: rgb(10, 158, 10);
+        color: rgb(255, 255, 255);
+        border: none;
+        height: 36px;
+        width: 100px;
+        border-radius: 3px;   
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.5s;   
+    } 
+
+    .go-text:hover {
+        background-color: rgb(29, 114, 29);
+    }
+
+    .love-dot {
+        color: rgb(241, 4, 4);
+    }
+
+    .brainpodsection-second {
+        color: rgb(96,96,96);
+    }
+
+    .yugoslavia-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 2px;
+        width: 550px;
+        margin-bottom: 2px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .war-independence {
+        width: 750px;
+        margin-top: 2px;
+        color: rgb(96,96,96);
+    }
+
+    .yugoslavia-dash {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .love-section {
+        color: red;
+    }
+
+    .yugo-dash {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .yugoslavia-section {
+        color: rgba(110, 75, 9, 0.671);
+    }
+
+    .yugo-dash2 {
+        margin-top: 2px;
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .yugo-dash3 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .yugo-dash4 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .yugo-dash5 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .important-findings {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 2px;
+    }
+
+    .old-flute {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .flute-info {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .independence-yugo {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 2px;
+    }
+
+    .old-flute {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 2px;
+    }
+
+    .flute-info {
+        margin-top: 2px;
+    }
+
+    .love-section {
+        color: red;
+    }
+
+    .yugoslavia-section {
+        color: rgba(95, 65, 8, 0.671);
+    }
+
+    .old-needle {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 2px;
+    }
+
+    .needle-info {
+        margin-top: 2px;
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .needle-section {
+        color: rgb(95, 65, 8, 0.671);
+    }
+
+
+    .flute-section {
+        color: rgba(95, 65, 8, 0.671);
+    }
+
+    .flute-img {
+        border-radius: 15px;
+    }
+    
+    .tradicional-food {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 2px;
+    }
+
+    .love-section {
+        color: red;
+    }
+
+    .food-section {
+        color: rgba(95, 65, 8, 0.671);
+    }
+
+    .tradicional-goodness {
+        width: 750px;
+        color: rgb(96,96,96);
+        margin-top: 2px;
+    }
+
+    .tradicional-goodness2 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .struklji-dash {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .dash-strukjli1 {
+        color: green;
+        font-weight: bold;
+    }
+
+    .rolleddumplings-dash {
+        color: green;
+        font-weight: bold;
+    }
+
+    .rolled-dash {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+    
+    .zganci-dash {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .zganci-delicious {
+        color: green;
+        font-weight: bold;
+    }
+
+    .zganci2-dash {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .potica-dash {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .potica-info {
+        font-weight: bold;
+        color: green;
+    }
+
+    .potica1-dash {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .potica2-dash {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .bujta-class {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .bujta-repa1 {
+        font-weight: bold;
+        color: green;
+    }
+
+    .bujta-repa2 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .bujta-repa3 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .carniolan-sausage {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .sausage-section {
+        font-weight: bold;
+        color: green;
+    }
+
+    .carniolan-sausage2 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .carniolan-sausage3 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .carniolan-sausage4 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .carniolan-sausage5 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .idrijski-žlikrofi {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .idrijski-zlikrofi1 {
+        font-weight: bold;
+        color: green;
+    }
+
+    .indrijski-zlikrofi2 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .prekmurska-gibanica {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .gibanica-section {
+        font-weight: bold;
+        color: green;
+    }
+
+    .layer-cake {
+        font-weight: bold;
+        color: green;
+    }
+
+    .prekmurska-sec2 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .cold-cuts {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .cold-cuts1 {
+        font-weight: bold;
+        color: green;
+    }
+
+    .cold-cuts2 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .cold-cuts3 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .jota-stew {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .jota-section {
+        font-weight: bold;
+        color: green;
+    }
+
+    .jota-section2 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .kremsnita-cake {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+
+    .kremsnita-section {
+        font-weight: bold;
+        color: green;
+    }
+
+    .kremsnita-cake2 {
+        width: 750px;
+        color: rgb(96,96,96);
+    }
+   </style>
+<html html="lang-en">
+    <body>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial scale="1'0">
+    <meta http-equiv="X-UA-Compatible" content="ie=egde">
+
+    <title>Discover-Slovenia.html</title> 
+      <p class="slovenia-dot">
+        <div class="wrapper">
+            <ul>
+                <a class="place-go" href="Places to go.html"><button class="go-text">Best places to go</button> </a>
+            </ul>
+        <p class="video-title">COME TO S<span class="love-dot">LOVE</span>NIA</p>
+        <p class="video-stats">Visit Your Next Awesome Adventure and Learn Something New About The Beautiful Country Called Slovenia!
+            <img class="slovenia-img" src="https://i.guim.co.uk/img/media/ef64b3e8184ca6903eae0ac447675625b7f5c4f5/0_38_7156_4294/master/7156.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=f250552d923cea0e8a7610de2de82d1b">
+            <p class="image-church">What you've currenlty saw was an image of a church from Lake Bled, if you want to see it more in detail be free to check <a class="site-photo" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjg9Zv3ofH7AhVIsaQKHQmlD5EQFnoECCUQAQ&url=https%3A%2F%2Fwww.bled.si%2Fen%2Fwhat-to-see-do%2Fattractions%2F17%2Fchurch-of-the-mother-of-god-on-the-lake%2F&usg=AOvVaw1rHJVhIQFZ4FX2xd5hsMs2">Slovenian chruch on Lake Bled.</a></p>
+      </p>
+       <h2 class="old-flute">A 60,000-YEAR-OLD <span class="flute-section">FLUTE</span></h2>
+
+       <p class="flute-info">
+        The area of Slovenia has been settled since Prehistory, which is evidenced by incredible findings found in today's Divje Babe Archaeological 
+        Park. There is a cave in the steep hillside of Šebrelje Plateau, which is considered to be one of the most important sites with Stone Age 
+        findings in the world. In it, the bones of more than 60 different animal species, most significantly those of a cave bear, tools made of 
+        stone and bone, and remains of fire pits used by Ice Age people were found. During excavation, archaeologists were surprised by a bone that 
+        proved to be a musical instrument made from the left thigh-bone of a young cave bear. It was made 60,000 years ago by a Neanderthal who used 
+        tools made of stone and bone to carve four holes and a mouthpiece into the bone. Contrary to theories that were held to be true for a 
+        long time, the flute, which can be seen at the National Museum in Ljubljana, proves that Neanderthals were a developed spiritual creature, 
+        capable of refined artistic creation. The Neanderthal flute, which is considered to be the oldest musical instrument in the world, can also 
+        produce 
+        complex music.
+        <img class="flute-img" src="https://www.slovenia.info/uploads/kultura/ikonicne_znamenitosti/najstarejse_leseno_kolo.jpg?1516116814361">
+       </p>
+
+        <h2 class="old-needle">A 30,000-YEAR-OLD <span class="needle-section">NEEDLE</span></h2>
+        <p class="needle-info">
+            At an elevation 1700 metres, on Mt Olševa, from where there is an incredible view of the Kamnik and Savinja Alps and the Logar Valley, you can
+            find a cave called Potočka Zijalka. In addition to the remains of a cave bear, a wolverine, and other animals, archaeologists also excavated 
+            the remains of fire pits, various stone artefacts, and bone tips. From among all of the findings that can now be seen at the Celje Regional 
+            Museum,a 30,000-year-old bone needle stands out. This artefact is decorated with a variety of circles and curves, which shows that Ice Age 
+            people had some artistic tendencies. The Potočka Zijalka Cave is incredibly important for understanding the course of the Würm Glaciation in 
+            the Alps and for the exploration of the flora and fauna of the time, 
+            as well as the life of Ice Age people.
+        </p>
+
+        <h2 class="independence-yugo">S<span class="love-section">LOVE</span>NIAN INPENDENCE FROM <span class="yugoslavia-section">YUGOSLAVIA</span></h2>
+        <p class="war-independence">
+            The independent state of the Republic of Slovenia was created on 25 June 1991 out of the federal republic of Slovenia, which was previously a part of the Socialist 
+            Federal Republic of Yugoslavia.
+        </p>
+
+        <p class="yugoslavia-dash">
+            The country of Slovenia emerged in the first half of the 19th century as a term to denote the territory in the southern area of the
+             Austrian dominions inhabited by a Slovene-speaking population. Up until 1918 under the Austrians no political territory with such a 
+             name had been formed, but the concept of Slovenia had nevertheless acquired a socially tangible and potentially even political dimension. 
+             After the First World War the majority of Slovenia's territory came under the Yugoslav state, in which the Slovene people lived their own 
+             autonomous cultural life. After the Second World War the communist federal Yugoslav state gained further slices of Slovene ethnic territory 
+             from Italy, and the Slovene republic thereby incorporated a 
+            greater part of the actual Slovene ethnic lands, complete with an opening to the Adriatic Sea at Koper.
+        </p>
+
+        <p class="yugo-dash">
+            Within federal Yugoslavia, the Slovene nation made good progress both economically and culturally, and consolidated its national existence 
+            despite the communist regime 
+            which ruled Yugoslavia after the Second World War.
+        </p>
+
+        <p class="yugo-dash2">
+            In the acute crisis facing the Yugoslav communist system from the middle of the 1980's, a crisis that was also manifested in interethnic 
+            relations, it became clear that the Yugoslav communists, including those of Slovenia, were not able to offer any new paths for the 
+            continued development of the multi-ethnic Yugoslav state community. It became clear that the social, economic, cultural and political 
+            structure of the Slovene nation was not 
+            compatible with the structures of the other Yugoslav nations.
+        </p>
+
+        <p class="yugo-dash3">
+            It was thus that in the spring of 1987 a group of intellectuals with anti-communist leanings appeared, 
+            centring themselves around the Nova revija magazine and contributing to it articles for a new Slovene national programme. 
+            In these articles they called for an abandoning of the communist system and the introduction of a politically pluralist, 
+            democratic system, a free market economy with public welfare and an independent Slovene state. This was over two and a 
+            half years before the fall of the Berlin Wall, and 
+            Yugoslavia was still governed by a communist system that rejected these demands.
+        </p>
+
+        <p class="yugo-dash4">
+            Among the Slovenes, however, these demands quickly won the sympathies of the broad mass of people, including many Slovene communists. 
+            In the spring of 1989 Slovenia's communist leadership recognised this new trend in the mood of the people, and began siding with it, 
+            particularly during the heightened inter-ethnic tensions in Kosovo. In May 1989 the leadership permitted a large popular gathering in 
+            Ljubljana in support of the demands from the Nova revija circle for an independent Slovene state. Up until spring 1990 the communists 
+            attempted to resolve the Slovene national question in the form of an asymmetric Yugoslav federation, but in September 1989 they 
+            nevertheless supported the amendments to Slovenia's constitution involving the sovereignty of the Slovene nation to dispose of its GDP and to 
+            command the armed forces in the territory of the Slovene republic
+        </p>
+
+        <p class="yugo-dash5">
+            The Yugoslav government did not agree with the declaration of an independent Slovenia, and attempted to block it through action by the Yugoslav army (YNA).
+            On the very night of Slovenia's declaration of independence the YNA started to occupy the republic's border crossings, with the aim of 
+            cutting Slovenia off from the outside world and keeping it in the Yugoslav structure. There were also secret plans to replace the regime in 
+            Slovenia. The Slovene leadership responded to the YNA acts by mobilising the local territorial defence force and the police, who started 
+            blocking and attacking the YNA units. The resistance to the YNA, which the Slovene leadership had declared to be an enemy force, was taken up 
+            spontaneously and in large numbers by ordinary Slovenes. The ten-day war for Slovenia's independence had started. After two days the Slovene 
+            resistance was already showing results. The YNA threatened Slovenia with retaliatory measures using all-out force. Public opinion in Europe 
+            started leaning in Slovenia's favour. In order to prevent any exacerbation or extension of the war, the "troika" from the European Community, 
+            Jaques Poos, Hans van den Broek and Gianni de Michelis, arrived in Zagreb on 29 June 1991 and attempted to broker a ceasefire. 
+            But the military operations continued unabated up until 2 July. On that day a Slovene delegation arranged with the European troika in 
+            Zagreb a ceasefire on the basis of a prior agreement on 1 July in Ljubljana between the Slovene leadership and a delegation of the 
+            Yugoslav government headed by its prime minister Ante Markovic. At that moment the YNA had already been defeated in Slovenia. 
+            On 7 July the mediation of European diplomats at a meeting of Yugoslav and Slovene delegations produced an agreement. 
+            The Republic of Slovenia retained control over its territory, including its external borders, while the Slovene forces released their 
+            blockade of YNA units, which had to return to barracks, all prisoners of war were released and for three months Slovenia had to refrain 
+            from any further independence measures. 
+        </p>
+
+        <h1 class="tradicional-food">S<span class="love-section">LOVE</span>NIAN TRADICIONAL <span class="food-section">FOOD</span></h1>
+        <p class="tradicional-goodness">
+            The most famous Slovenian dishes certainly include potica, žganci, gibanica, štruklji, žlikrofi, sauerkraut dishes and various cakes. Meat 
+            used to be on the table only on special 
+            occasions, but beef soup, roast beef and roasted potatoes are synonymous with the classic Slovenian Sunday lunch even today.
+        </p>
+
+        <p class="tradicional-goodness2">
+            Slovenia is a geographically very diverse country. To the northeast lies the Pannonian Plain, to the east the Dolenjska Hills, to the 
+            south the Karst and the Adriatic Sea, and to the west the hilly Alpine world. And just as individual Slovenian landscapes are 
+            diverse, so is traditional Slovenian cuisine. Each Slovenian region has its own culinary characteristics, and it can also be 
+            recognized by its typical dishes.
+        </p>
+
+        <p class="struklji-dash">
+            <span class="dash-strukjli1">1.Štruklji</span> or <span class="rolleddumplings-dash">rolled dumplings</span> are one of the best-known Slovenian dishes with first recipes from the 16th century when cooked rolled 
+            dumplings were part of cuisine in monasteries and then established in the 17th century as a festive middle-class meal. Today, this 
+            Slovenian food is a popular side dish for meat and sauces, and it can also be a delicious dessert.
+        </p>
+
+        <p class="rolled-dash">
+            The first rolled dumplings in a spiral or swirly shape were made of strudel dough. They are also made from leavened, phyllo, 
+            noodle and potato dough. You can order this traditional Slovenian food with different fillings, which can be either sweet or salty. 
+            Fillings can be made of tarragon, cottage cheese, nuts, apples, poppy seeds, and cheese.
+        </p>
+
+        <p class="zganci-dash">
+            <span class="zganci-delicious">2. Žganci </span> or corn mush or spoonbread is one of the most widespread Slovenian dishes, 
+            particularly those who are prepared with buckwheat flour and dressed with cracklings. If you are not a fan of cracklings, you can eat 
+            this healthy Slovenian food with sour milk, mushroom soup or chicken stew. Maize žganci are delicious with goulash and buckwheat 
+            spoonbread with sauerkraut. On a side, you can also order pork sausage or blood sausage.
+        </p>
+
+        <p class="zganci2-dash">
+            Buckwheat žganci are traditional Slovenian food in the Upper Carniola region. If you are going on a guided hiking tour anywhere in 
+            the Julian Alps, do not forget to stop by in the mountain cottages, where they serve the Gorenjska žganci version, where the flour is 
+            cooked in salted boiling water. They will also add potatoes and semolina or corn grits.Spoonbread is considered as a perfect meal that gives 
+            your body a lot of energy, so try them during a hiking tour through the beautiful alpine world
+        </p>
+
+        <p class="potica-dash">
+            <span class="potica-info">3.Potica</span> or rolled dough is the most famous Slovenian cake, and it is known almost everywhere in the world and recognized as an 
+            ambassador of Slovenia. The oldest written source about potica was mentioned in 1689 in the famous book The Glory of the Duchy of 
+            Carniola written by Janez Vajkard Valvasor. Originally, the roll was prepared only for the nobles and the upper class but was later 
+            also popular in the lower classes.
+        </p>
+
+        <p class="potica1-dash">
+            The festive pastry is made from rolled up and leavened dough, which they overlay with one filling or more, and then the dough is
+            rolled into a roll or oblong loaf, which is baked in a special baking tray and then served in slices.
+        </p>
+          
+        <p class="potica2-dash">
+            Potica can be prepared with more than 80 different fillings, the most common of which are fillings with tarragon, walnuts, 
+            poppy seeds, chives, cheese, and raisins.
+        </p>
+
+        <p class="bujta-class">
+            <span class="bujta-repa1">4.Bujta repa</span> is haggis-style blood and meat sausages with turnip stew and is one of the most recognizable culinary specialties of the 
+            Prekmurje cuisine. In the autumn and winter, this traditional Slovenian food is more or less a constant meal on farms, as well as in 
+            many village inns. There is also an annual event to honor bujta repa, similar to the bograč, a type of goulash, cooking competition, 
+            which is another famous gastronomic delicacy in the Prekmurje region.
+        </p>
+
+        <p class="bujta-repa2">
+            Preparation of bujta repa is associated with another fall-winter farm job when farmers every year make pork meat and sausages. 
+            The name of the dish is also linked with the slaughter of a pig, as “bujta” in the northeastern dialect means “killed”. Otherwise, 
+            you can also order this dish meat-free as it is equally tasty.
+        </p>
+
+        <p class="bujta-repa3">
+            Sour or pickled turnip hotpot is a one-course meal consisting of basic ingredients such as millet porridge, pork and grated sour 
+            turnip. Most often, it is seasoned with garlic, onions and ground red peppers, for a richer flavor. You can also eat this Slovenian 
+            food with roast pork or with millet or buckwheat black pudding.
+        </p>
+
+        <p class="carniolan-sausage">
+            <span class="sausage-section">5.Sausage Kranj</span> style is the most famous Slovenian food based on the rich heritage of pig processing into meat products. 
+            The earliest mention of the Kranj sausage dates from the early 19th century, during the Austro-Hungarian monarchy. It is 
+            mentioned in a large number of old cookbooks and was known and praised by Emperor Franz Joseph.
+        </p>
+
+        <p class="carniolan-sausage2">
+            From the Upper Carniola region, where it originated, this popular Slovenian food spread throughout the country. Since Carniolan 
+            sausage originates in this part of the country, you can try it in one of the best restaurants in Bled, where local delicacies enrich 
+            the taste of the sausage
+        </p>
+
+        <p class="carniolan-sausage3">
+            Carniolan sausage is a meat product that is protected by a geographical mark and can only be produced and named by certified 
+            manufacturers. Only the best pork meat and hard bacon are used to make the Carniolan sausage, to which salt, pepper, and garlic 
+            are added.
+        </p>
+
+        <p class="carniolan-sausage4">
+            According to the folk tradition, Carniola sausage is served warm with sauerkraut or sour turnip or cold with a bread roll, mustard, 
+            grated horseradish and a mug of beer. It tastes good in stews, as the sausage gives a spicier flavor.
+        </p>
+
+        <p class="carniolan-sausage5">
+            In the Bela Krajina region, you can also try a cereal sausage filled with millet porridge and a type of stuffed pork stomach. 
+            The Central Sava region is known for its semi-durable sausage with a liver filling that can be served warm or cold.
+        </p>
+
+        <p class="idrijski-žlikrofi">
+            <span class="idrijski-zlikrofi1">6.Idrijski žlikrofi</span> or Idrija dumplings originating from Idrija with its surroundings are 
+            well known traditional Slovenian food. They are prepared from home-made noodle dough, filled with potato stuffing and have a 
+            characteristic shape. Preparation is based on an old recipe that was described in the mid-19th century.
+        </p>
+
+        <p class="indrijski-zlikrofi2">
+            These filled pastas used to be cooked by housewives for their husbands who worked in a mine nearby. Nowadays, stuffed dumplings from 
+            Idrija are officially protected by a geographical origin, mainly because of their specific production and a unique recipe.
+        </p>
+        
+        <p class="prekmurska-gibanica">
+            <span class="gibanica-section">7.Prekmurian gibanica</span> or <span class="layer-cake">layer cake</span> is one of the old festive and ceremonial Slovenian desserts, which originate from the region along the 
+            Mura River. The oldest written recipe dates back to 1828. This sweet Slovenian food is under European protection and is regarded as 
+            one of the national gastronomic delicacies, due to its flavor, ingredients and a unique recipe.
+        </p>
+
+        <p class="prekmurska-sec2">
+            Prekmurje flat cake can be sweet or salty, and it is made of strudel dough layers and layers of many fillings. 
+            The classic gibanica is made of nine layers with fillings like poppy seeds, raisins, groundnuts, and steamed apples.
+        </p>
+
+        <p class="cold-cuts">
+            <span class="cold-cuts1">8.Cold cuts</span> with local prosciutto, salami and cheese are popular appetizers in many restaurants. Especially delicious are salami and 
+            cheeses that are produced locally, such as karstic prosciutto, a meat product that is protected by a geographical mark.
+        </p>
+
+        <p class="cold-cuts2">
+            Karstic prosciutto is a pork thigh that dries in the Karst bora. Its specialty lies in the centuries-old tradition of salting and 
+            drying, particularly in the Karst, Brda, Vipava, Istria and Tolmin region. The quality and reputation of this typical Slovenian 
+            food can be found in its rich aroma, intense ruby color, juiciness, firm structure and the salinity of prosciutto slices.   
+        </p>
+
+        <p class="cold-cuts3">
+            A culinary journey across the country will also lead you to regions where village inns and restaurants serve other meat products that 
+            are home-made and represent Slovenian food in the cold cuts.
+        </p>
+
+        <p class="jota-stew">
+            <span class="jota-section">9.Jota</span> or yota is a stew, and its name derives from the Gaelic word for soup. A light and tasty stew 
+            is a karstic and Friulian national 
+            specialty that is most often cooked in the Primorska and Gorizia region. This Slovenian food must be dense if it is made from bigger 
+            slices of potatoes and whole beans. In some places, it is a custom to crumble bread into a plate, pour over the jota and then extra 
+            virgin olive oil on top. Jota is served warm in winter and cool in summer.
+        </p>
+
+        <p class="jota-section2">
+            The main ingredients are beans, potatoes, sauerkraut, dried pork and spices such as garlic, bay leaf, salt, and pepper. They can 
+            add the whole cumin seeds or Carniolan sausage in this typical Slovenian food
+        </p>
+
+        <p class="kremsnita-cake">
+            <span class="kremsnita-section">10.Kremšnita</span> or cremeschnitte is a confectionery specialty in Bled, created after the Second World War, when it was invented in 1953 by 
+            the famous confectioner Ištvan Lukačevič in Bled, in the Hotel and Cafe Park. 
+        </p>
+
+        <p class="kremsnita-cake2">
+            The legendary, light and delicious Slovenian cake consists of three different layers, such as dough, egg cream and whipping cream. 
+            Between the top and bottom golden baked butter dough crust are a thick vanilla cream and whipped cream that melts in your mouth and 
+            is sprinkled with caster sugar on top.
+        </p>
+
+    
+    </body>  
+   </div>
+  </html>
+ </head>
